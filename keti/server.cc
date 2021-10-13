@@ -116,16 +116,16 @@ void rocksdbPutTest(char* data, size_t size) {
 
   s = db->Put(WriteOptions(), "keti_rocksdb_01", s_value);
   assert(s.ok());
-  std::string value;
+  //std::string value;
   // get value
-  s = db->Get(ReadOptions(), "keti_rocksdb_02", &value);
-  assert(s.ok());
+//   s = db->Get(ReadOptions(), "keti_rocksdb_02", &value);
+//   assert(s.ok());
 
-  for (int i=0; i< size; i++) {
-    assert(value.c_str()[i] == data[i]);
-  }
+//   for (int i=0; i< size; i++) {
+//     assert(value.c_str()[i] == data[i]);
+//   }
 
-  std::cout << "check2" << std::endl;
+//   std::cout << "check2" << std::endl;
 
 
   Iterator* it = db->NewIterator(ReadOptions());
