@@ -138,8 +138,6 @@ void rocksdbPutTest(char* data, size_t size) {
 
   delete it;
   delete db;
-
-  return 0;
 }
 
 int main(int argc, char* argv[])
