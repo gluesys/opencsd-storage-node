@@ -16,7 +16,8 @@
 
 using namespace ROCKSDB_NAMESPACE;
 
-std::string kDBPath = "/tmp/rocksdb_simple_example";
+//std::string kDBPath = "/tmp/rocksdb_simple_example";
+std::string kDBPath = "/tmp/.rocksdb_keti";
 
 int rocksdbPut(char* data, size_t size) {
 
