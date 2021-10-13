@@ -127,13 +127,13 @@ int main(int argc, char* argv[])
         if(clint_sock == -1)
                 printf("accept error\n");
 
-        //printf("accept\n");
+        printf("accept\n");
         while(1) {
                 int MAX_CHAR = 100;
                 char message[MAX_CHAR];
                 int str_len;
 
-                //printf("wait read\n");
+                printf("wait read\n");
                 if ((str_len = read(clint_sock, message, sizeof(message) )) == -1 ) { //5번
                         printf("read error");
                         exit(1);
@@ -146,7 +146,7 @@ int main(int argc, char* argv[])
                 }
                 printf("\n");
 
-                //printf("클라이언트에서 : %s \n", message);
+                printf("클라이언트에서 : %s \n", message);
                 rocksdbPut(message, str_len);
 
 
