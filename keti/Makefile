@@ -1,4 +1,4 @@
-include ../rocksdb/make_config.mk
+#include ../rocksdb/make_config.mk
 
 ifndef DISABLE_JEMALLOC
 	ifdef JEMALLOC
